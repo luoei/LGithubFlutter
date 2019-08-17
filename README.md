@@ -25,17 +25,12 @@
 
      class NetConfig {
        static const CLIENT_ID = "xxxx";
-     
+
        static const CLIENT_SECRET = "xxxxxxxxxxx";
      }
 
 
    [      注册 Github APP 传送门](https://github.com/settings/applications/new)，当然，前提是你现有一个github账号(～￣▽￣)～ 。
-
-<div>
-<img src="https://raw.githubusercontent.com/CarGuo/GSYGithubAppFlutter/master/register0.jpg" width="426px"/>
-<img src="https://raw.githubusercontent.com/CarGuo/GSYGithubAppFlutter/master/register1.jpg" width="426px"/>
-</div>
 
 4、运行之前请注意下
 
@@ -43,7 +38,7 @@
 
 ### 下载
 
-#### Apk下载链接： [Apk下载链接](https://)
+#### Apk下载链接： [Apk下载链接](https://fir.im/m8zw)
 
 
 ### 常见问题
@@ -54,5 +49,22 @@
 
 ### 示例图片
 
+<div>
+<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_1.png" width="426px"/>
+<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_1.png" width="426px"/>
+</div>
+<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_2.png" width="426px"/>
+<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_3.png" width="426px"/>
+</div><img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_3.png" width="426px"/>
+<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_3.png" width="426px"/>
+</div><img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_4.png" width="426px"/>
+<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_4.png" width="426px"/>
+</div><img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_5.png" width="426px"/>
+<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_5.png" width="426px"/>
+</div><img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_6.png" width="426px"/>
+</div><img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_7.png" width="426px"/>
+</div><img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_8.png" width="426px"/>
+</div>
 
-
+### 感谢
+[GSYGithubAppFlutter](https://github.com/CarGuo/GSYGithubAppFlutter/)
