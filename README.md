@@ -38,7 +38,7 @@
 
 ### 下载
 
-#### Apk下载链接： [Apk下载链接](https://fir.im/m8zw)
+#### Apk下载链接： [Apk下载链接](https://github.com/luoei/LGithubFlutter/releases)
 
 
 ### 常见问题
@@ -46,26 +46,25 @@
 * 如果包同步失败，一般都是因为没设置包代理，可以参考：[环境变量](https://flutter-io.cn/community/china)
 
 
-
 ### 示例图片
 
 <div>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_1.png" width="240px"/>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_1.png" width="240px"/>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_2.png" width="240px"/>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_3.png" width="240px"/>
-<br>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_3.png" width="240px"/>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_3.png" width="240px"/>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_4.png" width="240px"/>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_4.png" width="240px"/>
-<br>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_5.png" width="240px"/>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/Android_5.png" width="240px"/>
-<br>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_6.png" width="240px"/>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_7.png" width="240px"/>
-<img src="https://raw.githubusercontent.com/luoei/LGithubFlutter/master/images/iOS_8.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/1354166f6db048645298245cb176e88fa0f1b0.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/1358097a98d031bdb49d32787b7d33deec59dd.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/140011018a2c61f93f65bbc340de692d5014c8.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/14013283d9522134c8caaf6b03c6fa1566400a.png" width="240px"/>
+<br><br>
+<img src="http://img.ynsfy.com/md/20190817/1400552bb2f1080720245913b62dca10dc2c59.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/14003433275e5ed0facfe183af9bc640d5a8ac.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/140216a7c3020b4cfb4fd154c4fcfd62702df2.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/140241a1daee380baceac560b0ec3a335a675c.png" width="240px"/>
+<br><br>
+<img src="http://img.ynsfy.com/md/20190817/1403041dd1a69e09e8e9420956e2176984a2de.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/140326775c4143971141e336639ecc3ea00327.png" width="240px"/>
+<br><br>
+<img src="http://img.ynsfy.com/md/20190817/1403508b80f24e8e8662db7b82beb47d067166.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/140409f402875ada51f0ab65bafe8e6fd80452.png" width="240px"/>
+<img src="http://img.ynsfy.com/md/20190817/14042819539d71235b6060fcec02b2ae6a5806.png" width="240px"/>
 </div>
 
 ### 感谢
