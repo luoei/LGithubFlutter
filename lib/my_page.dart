@@ -74,7 +74,7 @@ class _MyPageState extends State<MyPage> with AutomaticKeepAliveClientMixin<MyPa
     var token = await LocalStorage.get(Config.TOKEN_KEY);
     if (token != null) {
       UserDao.getUserInfo(token).then((data) {
-        user = data;
+        user = data.data;
         setState(() {});
       });
     }

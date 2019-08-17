@@ -13,3 +13,5 @@ build/
 ignoreConfig.dart
 
 .gradle/
+
+*.apk

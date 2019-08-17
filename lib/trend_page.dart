@@ -63,26 +63,15 @@ class _TrendPageState extends State<TrendPage> with WidgetsBindingObserver, Auto
     ///监听生命周期，主要判断页面 resumed 的时候触发刷新
     WidgetsBinding.instance.addObserver(this);
     scrollController.addListener(_updateScrollPosition);
+    _loadData(_pageNo);
   }
 
   void _updateScrollPosition() {
     bool isBottom = scrollController.position.pixels ==
         scrollController.position.maxScrollExtent;
     if (!isLoadingMore && isBottom && !isRefreshing) {
-      setState(() {
-        _loadMoreData();
-      });
+      _loadMoreData();
     }
-  }
-
-  @override
-  void didChangeDependencies() {
-
-//    _futureBuilderFuture = DynamicDao.get(_pageNo);
-
-    _loadData(_pageNo);
-
-    super.didChangeDependencies();
   }
 
   @override
@@ -166,8 +155,8 @@ class _TrendPageState extends State<TrendPage> with WidgetsBindingObserver, Auto
         }else if(menuIndex == 1){
           LANGUAGE_TYPE_INDEX = index;
         }
-        showRefreshLoading();
-//        _loadFirstData();
+//        showRefreshLoading();
+        _loadFirstData();
       },
       child: new Column(
         children: <Widget>[
