@@ -38,7 +38,7 @@
 
 ### 下载
 
-#### Apk下载链接： [Apk下载链接](https://fir.im/m8zw)
+#### Apk下载链接： [Apk下载链接](https://github.com/luoei/LGithubFlutter/releases)
 
 
 ### 常见问题
