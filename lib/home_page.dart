@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:github/dynamic_page.dart';
-import 'package:github/trend_page.dart';
 import 'package:github/my_page.dart';
+import 'package:github/trend_page.dart';
 
 class HomePage extends StatefulWidget {
 

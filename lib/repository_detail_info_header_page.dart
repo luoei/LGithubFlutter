@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:github/common/config/config.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:github/common/dao/repository_detail_dao.dart';
 import 'package:github/common/model/Repository.dart';
-import 'package:github/common/model/Event.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:github/common/style/ui_style.dart';
-import 'package:github/common/utils/common_utils.dart';
 
 class RepositoryDetailInfoHeaderPage extends StatefulWidget {
   // 用户名

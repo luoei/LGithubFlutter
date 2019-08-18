@@ -1,12 +1,13 @@
-import 'package:github/common/config/config.dart';
 import 'dart:convert';
+
+import 'package:github/common/config/config.dart';
 import 'package:github/common/config/ignoreConfig.dart';
-import 'package:github/common/net/address.dart';
-import 'package:github/common/model/user_token.dart';
+import 'package:github/common/dao/dao_result.dart';
 import 'package:github/common/local/local_storage.dart';
 import 'package:github/common/model/user_entity.dart';
+import 'package:github/common/model/user_token.dart';
+import 'package:github/common/net/address.dart';
 import 'package:github/common/utils/http_utils.dart';
-import 'package:github/common/dao/dao_result.dart';
 
 class UserDao {
 

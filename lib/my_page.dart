@@ -1,18 +1,19 @@
+import 'dart:convert';
+
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:github/common/model/user_entity.dart';
-import 'package:github/common/local/local_storage.dart';
-import 'package:github/common/config/config.dart';
-import 'dart:convert';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:github/common/utils/common_utils.dart';
-import 'package:github/common/dao/my_dao.dart';
-import 'package:github/common/model/Event.dart';
-import 'package:github/common/dao/user_dao.dart';
 import 'package:github/common/component/ui_component_webview_page.dart';
-import 'package:github/preference_page.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:github/common/config/config.dart';
+import 'package:github/common/dao/my_dao.dart';
+import 'package:github/common/dao/user_dao.dart';
+import 'package:github/common/local/local_storage.dart';
+import 'package:github/common/model/Event.dart';
+import 'package:github/common/model/user_entity.dart';
 import 'package:github/common/style/ui_style.dart';
+import 'package:github/common/utils/common_utils.dart';
+import 'package:github/preference_page.dart';
 import 'package:github/repository_detail_page.dart';
 
 class MyPage extends StatefulWidget {

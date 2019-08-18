@@ -1,5 +1,5 @@
-import 'package:github/common/model/user_entity.dart';
 import 'package:github/common/model/dynamic_item_entity.dart';
+import 'package:github/common/model/user_entity.dart';
 
 class EntityFactory {
   static T generateOBJ<T>(json) {

@@ -1,9 +1,9 @@
-import 'package:http/http.dart' as http;
-import 'package:http/io_client.dart';
-import 'dart:io';
-import 'dart:convert';
-import 'package:github/common/config/config.dart';
 import 'dart:async';
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:github/common/config/config.dart';
+import 'package:http/http.dart' as http;
 
 class HttpRouteUtils {
 

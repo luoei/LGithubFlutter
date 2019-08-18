@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+
 
 class UIcons {
   static const String FONT_FAMILY = 'wxcIconFont';

@@ -1,7 +1,7 @@
 import 'dart:core';
 
-import 'package:json_annotation/json_annotation.dart';
 import 'package:github/common/model/user_token_app.dart';
+import 'package:json_annotation/json_annotation.dart';
 
 part 'user_token.g.dart';
 

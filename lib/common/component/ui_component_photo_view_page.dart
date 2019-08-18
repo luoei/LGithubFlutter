@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:photo_view/photo_view.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:github/common/style/ui_style.dart';
+import 'package:photo_view/photo_view.dart';
 
 class UIComponentPhotoViewPage extends StatelessWidget {
 

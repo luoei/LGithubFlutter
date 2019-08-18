@@ -1,13 +1,14 @@
+import 'dart:convert';
+
 import 'package:github/common/config/config.dart';
+import 'package:github/common/local/local_storage.dart';
+import 'package:github/common/model/Event.dart';
+import 'package:github/common/model/FileModel.dart';
+import 'package:github/common/model/Issue.dart';
+import 'package:github/common/model/RepoCommit.dart';
+import 'package:github/common/model/Repository.dart';
 import 'package:github/common/net/address.dart';
 import 'package:http/http.dart' as http;
-import 'package:github/common/local/local_storage.dart';
-import 'package:github/common/model/Repository.dart';
-import 'dart:convert';
-import 'package:github/common/model/Event.dart';
-import 'package:github/common/model/RepoCommit.dart';
-import 'package:github/common/model/Issue.dart';
-import 'package:github/common/model/FileModel.dart';
 
 class RepositoryDetailDao {
 

@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:github/common/model/TrendingRepoModel.dart';
-import 'package:github/common/config/config.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:github/common/dao/trend_dao.dart';
-import 'package:github/common/style/ui_style.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dropdown_menu/dropdown_menu.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:github/common/config/config.dart';
+import 'package:github/common/dao/trend_dao.dart';
+import 'package:github/common/model/TrendingRepoModel.dart';
+import 'package:github/common/style/ui_style.dart';
 import 'package:github/repository_detail_page.dart';
 
 class TrendPage extends StatefulWidget {
@@ -93,8 +93,8 @@ class _TrendPageState extends State<TrendPage> with WidgetsBindingObserver, Auto
   }
 
   showRefreshLoading() {
-    new Future.delayed(const Duration(seconds: 0), () {
-      var state = refreshIndicatorKey.currentState;
+    new Future.delayed(const Duration(milliseconds: 100), () {
+      refreshIndicatorKey.currentState.show();
       return true;
     });
   }
@@ -107,6 +107,8 @@ class _TrendPageState extends State<TrendPage> with WidgetsBindingObserver, Auto
         title: Text('趋势'),
       ),
       body: RefreshIndicator(
+        key: refreshIndicatorKey,
+        displacement:80.0,
         child: resultView,
         onRefresh: _loadFirstData,
       ),
@@ -155,8 +157,17 @@ class _TrendPageState extends State<TrendPage> with WidgetsBindingObserver, Auto
         }else if(menuIndex == 1){
           LANGUAGE_TYPE_INDEX = index;
         }
-//        showRefreshLoading();
-        _loadFirstData();
+        ///回滚到最初位置
+        scrollController
+            .animateTo(0,
+            duration: Duration(milliseconds: 100), curve: Curves.bounceIn)
+            .then((_) {
+          new Future.delayed(Duration(seconds: 0), (){
+            showRefreshLoading();
+            return true;
+          });
+        });
+
       },
       child: new Column(
         children: <Widget>[
@@ -166,7 +177,6 @@ class _TrendPageState extends State<TrendPage> with WidgetsBindingObserver, Auto
                 children: <Widget>[
                   new ListView.builder(
                     controller: scrollController,
-                    key: refreshIndicatorKey,
                     itemCount: items.length+1,
                     itemBuilder: (context, index) {
                       if (index == items.length){

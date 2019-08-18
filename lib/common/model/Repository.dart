@@ -1,8 +1,8 @@
 import 'package:github/common/model/License.dart';
 import 'package:github/common/model/RepositoryPermissions.dart';
 import 'package:github/common/model/user_entity.dart';
-import 'package:json_annotation/json_annotation.dart';
 import 'package:github/common/utils/common_utils.dart';
+import 'package:json_annotation/json_annotation.dart';
 
 /**
  * Created by guoshuyu

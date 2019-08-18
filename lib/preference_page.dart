@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:github/common/config/config.dart';
 import 'package:github/common/local/local_storage.dart';
+import 'package:github/common/style/ui_style.dart';
+import 'package:github/common/utils/navigator_utils.dart';
 import 'package:github/login_page.dart';
 import 'package:package_info/package_info.dart';
-import 'package:github/common/utils/navigator_utils.dart';
-import 'package:github/common/style/ui_style.dart';
 
 class PreferencePage extends StatelessWidget {
 

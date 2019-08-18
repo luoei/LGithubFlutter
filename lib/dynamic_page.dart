@@ -1,13 +1,12 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:github/common/dao/dao_result.dart';
 import 'package:github/common/dao/dynamic_dao.dart';
 import 'package:github/common/model/dynamic_item_entity.dart';
-import 'package:github/common/utils/common_utils.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:github/common/style/ui_style.dart';
-import 'package:dropdown_menu/dropdown_menu.dart';
+import 'package:github/common/utils/common_utils.dart';
 import 'package:github/repository_detail_page.dart';
-import 'package:github/common/dao/dao_result.dart';
 
 class DynamicPage extends StatefulWidget {
 

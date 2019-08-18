@@ -1,9 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:github/common/component/ui_component_webview_page.dart';
 import 'package:github/common/dao/repository_detail_dao.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:github/common/utils/html_utils.dart';
-import 'dart:convert';
 
 class UIComponentCodeWebViewPage extends UIComponentWebViewPage {
 

@@ -1,17 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:github/common/config/config.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:github/common/dao/repository_detail_dao.dart';
-import 'package:github/common/model/Repository.dart';
-import 'package:github/common/model/Event.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:github/common/style/ui_style.dart';
-import 'package:github/common/utils/common_utils.dart';
-import 'package:github/repository_detail_info_header_page.dart';
-import 'package:github/repository_detail_info_segement_page.dart';
-import 'dart:math' as math;
-import 'package:github/common/model/RepoCommit.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 
 class RepositoryDetailReadmePage extends StatefulWidget {
   // 用户名

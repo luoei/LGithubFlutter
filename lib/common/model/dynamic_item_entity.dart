@@ -1,6 +1,6 @@
 import 'package:github/common/model/Issue.dart';
-import 'package:github/common/model/PushEventCommit.dart';
 import 'package:github/common/model/IssueEvent.dart';
+import 'package:github/common/model/PushEventCommit.dart';
 import 'package:github/common/model/Release.dart';
 
 class DynamicItemEntity {

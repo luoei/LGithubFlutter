@@ -1,8 +1,8 @@
 import 'package:github/common/model/EventPayload.dart';
+import 'package:github/common/model/PushEventCommit.dart';
 import 'package:github/common/model/Repository.dart';
 import 'package:github/common/model/user_entity.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:github/common/model/PushEventCommit.dart';
 
 /**
  * Created by guoshuyu

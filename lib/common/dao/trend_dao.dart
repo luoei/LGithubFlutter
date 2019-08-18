@@ -1,8 +1,8 @@
 import 'package:github/common/config/config.dart';
-import 'package:github/common/net/address.dart';
-import 'package:http/http.dart' as http;
 import 'package:github/common/local/local_storage.dart';
+import 'package:github/common/net/address.dart';
 import 'package:github/common/utils/trending_utils.dart';
+import 'package:http/http.dart' as http;
 
 class TrendDao {
 

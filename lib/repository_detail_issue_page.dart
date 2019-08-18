@@ -1,12 +1,12 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:github/common/config/config.dart';
 import 'package:github/common/dao/repository_detail_dao.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:github/common/model/Issue.dart';
 import 'package:github/common/style/ui_style.dart';
 import 'package:github/common/utils/common_utils.dart';
 import 'package:github/repository_detail_info_segement_page.dart';
-import 'package:github/common/model/Issue.dart';
-import 'package:github/common/config/config.dart';
 
 class RepositoryDetailIssuePage extends StatefulWidget {
   // 用户名

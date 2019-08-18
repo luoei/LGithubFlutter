@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:github/common/component/ui_component_flex_button_widge.dart';
 import 'package:github/common/component/ui_component_input_widget.dart';
-import 'package:github/common/dao/user_dao.dart';
-import 'package:github/common/model/user_token.dart';
-import 'package:github/home_page.dart';
-import 'package:github/common/local/local_storage.dart';
 import 'package:github/common/config/config.dart';
-import 'package:github/common/utils/common_utils.dart';
-import 'package:github/common/style/ui_style.dart';
 import 'package:github/common/dao/dao_result.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:github/common/dao/user_dao.dart';
+import 'package:github/common/local/local_storage.dart';
+import 'package:github/common/model/user_token.dart';
+import 'package:github/common/style/ui_style.dart';
+import 'package:github/common/utils/common_utils.dart';
+import 'package:github/home_page.dart';
 
 class LoginPage extends StatefulWidget {
 

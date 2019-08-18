@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:github/common/utils/navigator_utils.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:github/common/utils/navigator_utils.dart';
 import 'package:intl/intl.dart';
 
 class CommonUtils {

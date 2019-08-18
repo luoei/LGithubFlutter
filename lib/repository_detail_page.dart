@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:github/repository_detail_info_page.dart';
-import 'package:github/repository_detail_readme_page.dart';
-import 'package:github/repository_detail_issue_page.dart';
-import 'package:github/repository_detail_file_page.dart';
-import 'package:github/common/config/config.dart';
 import 'package:github/common/dao/repository_detail_dao.dart';
+import 'package:github/repository_detail_file_page.dart';
+import 'package:github/repository_detail_info_page.dart';
+import 'package:github/repository_detail_issue_page.dart';
+import 'package:github/repository_detail_readme_page.dart';
 
 class RepositoryDetailPage extends StatefulWidget {
 

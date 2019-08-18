@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:github/common/config/config.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:github/common/dao/repository_detail_dao.dart';
-import 'package:github/common/utils/navigator_utils.dart';
-import 'package:github/common/utils/common_utils.dart';
-import 'dart:math' as math;
-import 'package:github/common/model/FileModel.dart';
 import 'package:github/common/component/ui_component_code_webview_page.dart';
+import 'package:github/common/config/config.dart';
+import 'package:github/common/dao/repository_detail_dao.dart';
+import 'package:github/common/model/FileModel.dart';
+import 'package:github/common/utils/common_utils.dart';
+import 'package:github/common/utils/navigator_utils.dart';
 
 typedef void SelectedItemChanged<FileModel>(FileModel value);
 
@@ -67,10 +66,17 @@ class _RepositoryDetailFilePageState extends State<RepositoryDetailFilePage>
   }
 
   showRefreshLoading() {
-    new Future.delayed(const Duration(seconds: 0), () {
-      refreshIndicatorKey.currentState.show().then((e) {});
-      return true;
+    ///回滚到最初位置
+    scrollController
+        .animateTo(0,
+        duration: Duration(milliseconds: 100), curve: Curves.bounceIn)
+        .then((_) {
+      new Future.delayed(const Duration(microseconds: 0), () {
+        refreshIndicatorKey.currentState.show().then((e) {});
+        return true;
+      });
     });
+
   }
 
   _renderHeader() {
@@ -99,8 +105,7 @@ class _RepositoryDetailFilePageState extends State<RepositoryDetailFilePage>
         headerList.add(item.name);
         _path = headerList.sublist(1, headerList.length).join("/");
       });
-//      showRefreshLoading();
-    _loadData();
+      showRefreshLoading();
     }else{
       String path = headerList.sublist(1, headerList.length).join("/") +"/"+item.name;
       if (CommonUtils.isImageEnd(path)){
@@ -119,13 +124,13 @@ class _RepositoryDetailFilePageState extends State<RepositoryDetailFilePage>
         _path = path;
         headerList = newHeaderList;
       });
-      _loadData();
+      showRefreshLoading();
     }else{
       setState(() {
         _path = "";
         headerList = ["."];
       });
-      _loadData();
+      showRefreshLoading();
     }
   }
 
@@ -149,9 +154,9 @@ class _RepositoryDetailFilePageState extends State<RepositoryDetailFilePage>
         elevation: 0,
       ),
       body: RefreshIndicator(
+        key: refreshIndicatorKey,
         child: ListView.builder(
           controller: scrollController,
-          key: refreshIndicatorKey,
           itemCount: null == dataSource ? 0 : dataSource.length,
           itemBuilder: (context, index) {
             return _ListItem(context, dataSource[index], (item){
